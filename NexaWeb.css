@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.header {
+  position:fixed;
+  background-color: #000;          /* fond noir */
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin-top: 0
+}
+
+@media (max-width: 768px) {
+  .header {
+    position:static /* garde fixed sur mobile */
+  }
+
+  
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* logo à gauche, liens à droite */
+}
+
+.logo img {
+  height:auto;
+  width: 100px;
+  display: block;
+  margin: 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: #000;
+  color: #fff;
+  padding: 120px 20px;
+  padding-top: 150px;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2da9dc;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  border-radius: 3px;
+}
+
+.btn-primary:hover {
+  background-color: #25e445;
+}
+
+.services {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-card {
+  flex: 1;
+  min-width: 260px;
+  background-color: #2da9dc;
+  padding: 25px;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.about {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.about-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 2;
+  min-width: 280px;
+}
+
+.about-side {
+  flex: 1;
+  min-width: 260px;
+  background-color: #f5f5f5;
+  padding: 20px 25px;
+  border-radius: 6px;
+}
+
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-side h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.about-side ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.about-side li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.works {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.works .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.works h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.works-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.work-card {
+  flex: 1;
+  min-width: 260px;
+  background-color: #2da9dc;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+.work-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.work-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.work-tag {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #555;
+}
+
+.contact {
+  padding: 80px 20px;
+  background-color: #f5f5f5;
+}
+
+.contact-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.contact-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border-color: #2da9dc;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: #ff6600;
+  box-shadow: 0 0 0 1px rgba(255, 102, 0, 0.2);
+}
+
+.footer {
+  background-color: #000;
+  color: #ccc;
+
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer h3,
+.footer h4 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 6px;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  padding: 15px 20px;
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-bottom div{
+    display: flex;
+}
+
+.footer-bottom img{
+  height: 25px;
+  margin-right: 10px;
+}
+
+/* =====================
+   MENU BURGER
+   ===================== */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 1100;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* État ouvert du burger */
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* =====================
+   RESPONSIVE — TABLETTE (≤ 768px)
+   ===================== */
+@media (max-width: 768px) {
+
+  /* --- Header & nav burger --- */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    padding: 20px;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1050;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    margin-left: 0;
+    font-size: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #222;
+  }
+
+  .header .container {
+    position: relative;
+  }
+
+  /* --- Hero --- */
+  .hero {
+    padding: 70px 20px 60px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* --- Services & Works : cartes pleine largeur --- */
+  .service-card,
+  .work-card {
+    min-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  /* --- About : colonne unique --- */
+  .about-inner {
+    flex-direction: column;
+  }
+
+  .about-text,
+  .about-side {
+    min-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  /* --- Contact : colonne unique --- */
+  .contact-inner {
+    flex-direction: column;
+  }
+
+  .contact-text,
+  .contact-form {
+    min-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  /* --- Titres de sections --- */
+  .services h2,
+  .about h2,
+  .works h2,
+  .contact-text h2 {
+    font-size: 22px;
+  }
+
+  /* --- Footer --- */
+  .footer-col {
+    min-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .footer-bottom .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+  }
+}
+
+/* =====================
+   RESPONSIVE — MOBILE (≤ 480px)
+   ===================== */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+}
