@@ -1,3 +1,4 @@
+/* reset de base, sinon chaque navigateur applique ses propres marges par défaut */
 * {
   margin: 0;
   padding: 0;
@@ -20,11 +21,11 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* en fixed le header prenait trop de place sur petit écran, du coup
+     je le repasse en static pour libérer l'espace */
   .header {
-    position:static /* garde fixed sur mobile */
+    position:static
   }
-
-  
 }
 
 .header .container {
