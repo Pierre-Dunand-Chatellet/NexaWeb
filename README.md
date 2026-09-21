@@ -1,5 +1,7 @@
 # NexaWeb
 
+![Aperçu du projet](apercu.jpg)
+
 Site vitrine complet d'une agence web fictive : services, présentation, réalisations
 et contact, dans un style minimaliste.
 
